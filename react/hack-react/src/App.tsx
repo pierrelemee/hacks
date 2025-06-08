@@ -1,44 +1,28 @@
 import './App.css'
 import SearchResult from "./SearchResult.tsx";
-import {useState} from "react";
-
-
-type Album = {
-    title: string,
-    artist: string,
-    favorite: boolean,
-}
-
-const albums = [
-    {
-        title: 'Rock action',
-        artist: 'Mogwai',
-        favorite: false,
-    } as Album,
-    {
-        title: 'OK Computer',
-        artist: 'Radiohead',
-        favorite: true,
-    } as Album,
-    {
-        title: 'Without you I\'m nothing',
-        artist: 'Placebo',
-        favorite: true,
-    } as Album,
-    {
-        title: 'OK Cowboy',
-        artist: 'Vitalic',
-        favorite: false,
-    } as Album,
-];
+import {useMemo, useState} from "react";
+import type {Album} from "./Album.ts";
 
 type Search = {
     query: string;
     onlyFavorites: boolean;
 }
 
-function App() {
+function App({albums}: {albums: Album[]}) {
     const [search, setSearch] = useState<Search>({ query: "" , onlyFavorites: false });
+
+    const results = useMemo(
+        () =>
+            albums
+                // Apply `query` filter
+                .filter((album: Album) => album.title.toLowerCase().includes(search.query.toLowerCase()))
+                // Apply `onlyFavorites` filter
+                .filter((album: Album) => !search.onlyFavorites || album.favorite),
+        [albums, search]
+    );
+
+
+
 
   return (
     <>
@@ -77,12 +61,7 @@ function App() {
 
               <ul>
                   {
-                      albums
-                          // Apply `query` filter
-                          .filter((album: Album) => album.title.toLowerCase().includes(search.query.toLowerCase()))
-                          // Apply `onlyFavorites` filter
-                          .filter((album: Album) => !search.onlyFavorites || album.favorite )
-                          .map((album: Album) =>
+                      results.map((album: Album) =>
                           (
                               <li key={`${album.artist}-${album.title}`}>
                               <SearchResult
