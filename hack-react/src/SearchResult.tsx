@@ -1,22 +1,32 @@
-import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
+import {MdFavorite, MdFavoriteBorder} from "react-icons/md";
 import {memo} from "react";
+import type {Album} from "./Album.ts";
 
 const SearchResult = memo((
-    { title, artist, favorite} :{ title: string, artist: string, favorite: boolean }
+    {album, isFavorite, favor, unfavor}: {
+        album: Album,
+        isFavorite: boolean,
+        favor: (album: Album) => void,
+        unfavor: (album: Album) => void
+    }
 ) => {
 
-    console.log(`Result: ${artist} - ${title}`);
+    console.log(`Result: ${album.id}`);
 
-  return (
-      <>
-          <>
-              <b>{ title }</b> ({ artist })
-          </>
+    return (
+        <>
+            <>
+                <b>{album.title}</b> ({album.artist})
+            </>
 
-          <span>
-              {favorite ? <MdFavorite/> : <MdFavoriteBorder/>}
-          </span>
-      </>
-)});
+            <button
+                title={isFavorite ? 'Add to favorites' : 'Remove from favorites'}
+                onClick={() => isFavorite ? unfavor(album) : favor(album)}
+            >
+                {isFavorite ? <MdFavorite/> : <MdFavoriteBorder/>}
+            </button>
+        </>
+    )
+});
 
 export default SearchResult;

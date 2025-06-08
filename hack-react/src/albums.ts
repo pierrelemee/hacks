@@ -1,24 +1,8 @@
-import type {Album} from "./Album.ts";
+import {Album} from "./Album";
 
 export const albums = [
-    {
-        title: 'Rock action',
-        artist: 'Mogwai',
-        favorite: false,
-    } as Album,
-    {
-        title: 'OK Computer',
-        artist: 'Radiohead',
-        favorite: true,
-    } as Album,
-    {
-        title: 'Without you I\'m nothing',
-        artist: 'Placebo',
-        favorite: true,
-    } as Album,
-    {
-        title: 'OK Cowboy',
-        artist: 'Vitalic',
-        favorite: false,
-    } as Album,
+    new Album('Mogwai', 'Rock action'),
+    new Album('Radiohead', 'OK Computer'),
+    new Album('Placebo', 'Without you I\'m nothing'),
+    new Album('Vitalic', 'OK Cowboy')
 ];
