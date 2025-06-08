@@ -21,9 +21,6 @@ function App({albums}: {albums: Album[]}) {
         [albums, search]
     );
 
-
-
-
   return (
     <>
       <div id="app">
