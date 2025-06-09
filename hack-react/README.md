@@ -15,7 +15,8 @@ Here is what I would like to do:
 
 - [x] Show a list of known albums, filterable by search criteria or favorite
 - [x] Mark / unmark an album as favorite (-> handle global stater / context w/ [Valtio](https://valtio.dev/) ?)
-- [ ] Setup [Tailwind](https://tailwindcss.com/docs/installation/using-vite) to improve UI & enable responsiveness
+- [ ] Setup [Tailwind](https://tailwindcss.com/docs/installation/using-vite) with [DaisyUI](https://daisyui.com/) to
+  improve UI & enable responsiveness
 - [ ] Include songs with their genre / duration ( -> nesting )
 - [ ] Create a new album (-> [validation](https://www.npmjs.com/package/class-validator#validation-decorators) of
   a [React `<form>`](https://react.dev/reference/react-dom/components/form)

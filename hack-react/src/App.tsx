@@ -28,14 +28,15 @@ function App({albums}: { albums: Album[] }) {
     return (
         <>
             <div id="app">
-                <h1>Albums</h1>
+                <h1 className="text-3xl font-bold">Albums</h1>
 
                 <div className="search-filters">
-                    <h3>Search</h3>
+                    <h3 className="text-2xl font-bold my-2">Search</h3>
                     <form>
                         <div className="input-group">
                             <label>Album title</label>
                             <input
+                                className="input"
                                 type="search"
                                 placeholder={'Best of...'}
                                 value={search.query}
@@ -58,7 +59,7 @@ function App({albums}: { albums: Album[] }) {
                 </div>
 
                 <div className="search-results">
-                    <h4>Found 4 albums:</h4>
+                    <h4>Found {results.length} album{results.length > 1 ? 's' : ''}:</h4>
 
                     <ul>
                         {
