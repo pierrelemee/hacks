@@ -1,0 +1,222 @@
+[
+  {
+    "id": "bdf93ecb-85e8-3505-98f7-e2e8c5052723",
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "cover": "https://lastfm.freetls.fastly.net/i/u/174s/131e3e85d45047e93ab77b422e591719.jpg",
+    "tracks": [
+      {
+        "name": "Airbag",
+        "duration": 282
+      },
+      {
+        "name": "Paranoid Android",
+        "duration": 384
+      },
+      {
+        "name": "Subterranean Homesick Alien",
+        "duration": 283
+      },
+      {
+        "name": "Exit Music (for a Film)",
+        "duration": 294
+      },
+      {
+        "name": "Let Down",
+        "duration": 337
+      },
+      {
+        "name": "Karma Police",
+        "duration": 263
+      },
+      {
+        "name": "Fitter Happier",
+        "duration": 117
+      },
+      {
+        "name": "Electioneering",
+        "duration": 209
+      },
+      {
+        "name": "Climbing Up the Walls",
+        "duration": 249
+      },
+      {
+        "name": "No Surprises",
+        "duration": 227
+      },
+      {
+        "name": "Lucky",
+        "duration": 300
+      },
+      {
+        "name": "The Tourist",
+        "duration": 318
+      }
+    ]
+  },
+  {
+    "id": "65957f4b-9596-4ef3-b98f-17579f982a5a",
+    "title": "Without You I'm Nothing",
+    "artist": "Placebo",
+    "cover": "https://lastfm.freetls.fastly.net/i/u/174s/a1661e873d3eb5eb09cdc76b9b90a850.png",
+    "tracks": [
+      {
+        "name": "Pure Morning",
+        "duration": 232
+      },
+      {
+        "name": "Brick Shithouse",
+        "duration": 258
+      },
+      {
+        "name": "You Don't Care About Us",
+        "duration": 238
+      },
+      {
+        "name": "Ask for Answers",
+        "duration": 319
+      },
+      {
+        "name": "Without You I'm Nothing",
+        "duration": 301
+      },
+      {
+        "name": "Allergic (to Thoughts of Mother Earth)",
+        "duration": 256
+      },
+      {
+        "name": "The Crawl",
+        "duration": 179
+      },
+      {
+        "name": "Every You Every Me",
+        "duration": 218
+      },
+      {
+        "name": "My Sweet Prince",
+        "duration": 276
+      },
+      {
+        "name": "Summer's Gone",
+        "duration": 185
+      },
+      {
+        "name": "Scared of Girls",
+        "duration": 181
+      },
+      {
+        "name": "Burger Queen",
+        "duration": 374
+      },
+      {
+        "name": "(silence)",
+        "duration": 511
+      },
+      {
+        "name": "Evil Dildo",
+        "duration": 474
+      }
+    ]
+  },
+  {
+    "id": "33a19b38-195f-4d41-82aa-60784b63e008",
+    "title": "Rock Action",
+    "artist": "Mogwai",
+    "cover": "https://lastfm.freetls.fastly.net/i/u/174s/0fbe2647acbcb1fdb547690fa250958f.png",
+    "tracks": [
+      {
+        "name": "Sine Wave",
+        "duration": 295
+      },
+      {
+        "name": "Take Me Somewhere Nice",
+        "duration": 412
+      },
+      {
+        "name": "O I Sleep",
+        "duration": 55
+      },
+      {
+        "name": "Dial: Revenge",
+        "duration": 208
+      },
+      {
+        "name": "You Don't Know Jesus",
+        "duration": 365
+      },
+      {
+        "name": "Robot Chant",
+        "duration": 63
+      },
+      {
+        "name": "2 Rights Make 1 Wrong",
+        "duration": 503
+      },
+      {
+        "name": "Secret Pint",
+        "duration": 272
+      }
+    ]
+  },
+  {
+    "id": "d116095e-9bd5-399a-af10-4d819c32f0f8",
+    "title": "OK Cowboy",
+    "artist": "Vitalic",
+    "cover": "https://lastfm.freetls.fastly.net/i/u/174s/e976108f03d74924bf65312b9f1f8aae.png",
+    "tracks": [
+      {
+        "name": "Polkamatic",
+        "duration": 112
+      },
+      {
+        "name": "Poney Part I",
+        "duration": 134
+      },
+      {
+        "name": "My Friend Dario",
+        "duration": 115
+      },
+      {
+        "name": "Wooo",
+        "duration": 230
+      },
+      {
+        "name": "La Rock 01",
+        "duration": 328
+      },
+      {
+        "name": "The Past",
+        "duration": 267
+      },
+      {
+        "name": "No Fun",
+        "duration": 217
+      },
+      {
+        "name": "Poney Part II",
+        "duration": 312
+      },
+      {
+        "name": "Repair Machines",
+        "duration": 225
+      },
+      {
+        "name": "Newman",
+        "duration": 289
+      },
+      {
+        "name": "Trahison",
+        "duration": 271
+      },
+      {
+        "name": "U and I",
+        "duration": 219
+      },
+      {
+        "name": "Valletta Fanfares",
+        "duration": 122
+      }
+    ]
+  }
+]

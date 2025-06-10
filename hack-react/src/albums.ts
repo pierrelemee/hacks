@@ -1,8 +1,5 @@
 import {Album} from "./Album";
+import {plainToInstance} from "class-transformer";
+import {default as data} from "./albums.json"
 
-export const albums = [
-    new Album('Mogwai', 'Rock action'),
-    new Album('Radiohead', 'OK Computer'),
-    new Album('Placebo', 'Without you I\'m nothing'),
-    new Album('Vitalic', 'OK Cowboy')
-];
+export const albums = plainToInstance(Album, data);

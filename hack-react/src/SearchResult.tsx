@@ -1,5 +1,5 @@
 import {MdFavorite, MdFavoriteBorder} from "react-icons/md";
-import {memo} from "react";
+import {memo, useMemo} from "react";
 import type {Album} from "./Album.ts";
 
 const SearchResult = memo((
@@ -11,7 +11,12 @@ const SearchResult = memo((
     }
 ) => {
 
-    console.log(`Result: ${album.id}`);
+    const duration: string = useMemo(() => {
+        const minutes = Math.floor(album.duration / 60);
+        const hours = Math.floor(minutes / 60);
+
+        return `${hours ? hours + 'h' : ''}${minutes % 60}m`;
+    }, [album]);
 
     return (
         <>
@@ -25,6 +30,11 @@ const SearchResult = memo((
             >
                 {isFavorite ? <MdFavorite/> : <MdFavoriteBorder/>}
             </button>
+
+            <br/>
+
+            <span
+                className="text-sm">{album.tracks.length} tracks - {duration}</span>
         </>
     )
 });
