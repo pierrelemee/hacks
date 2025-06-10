@@ -19,23 +19,25 @@ const SearchResult = memo((
     }, [album]);
 
     return (
-        <>
-            <>
-                <b>{album.title}</b> ({album.artist})
-            </>
+        <div className="album-preview">
+            <img src={album.cover} style={{width: '250px'}}/>
+            <div className="album-preview-details">
+                <span>
+                    <b>{album.title}</b>
+                    <br/>
+                    {album.artist}
+                    <br/>
+                    <span className="text-xs">{album.tracks.length} tracks - {duration}</span>
+                </span>
 
-            <button
-                title={isFavorite ? 'Add to favorites' : 'Remove from favorites'}
-                onClick={() => isFavorite ? unfavor(album) : favor(album)}
-            >
-                {isFavorite ? <MdFavorite/> : <MdFavoriteBorder/>}
-            </button>
-
-            <br/>
-
-            <span
-                className="text-sm">{album.tracks.length} tracks - {duration}</span>
-        </>
+                <button className="button"
+                        title={isFavorite ? 'Add to favorites' : 'Remove from favorites'}
+                        onClick={() => isFavorite ? unfavor(album) : favor(album)}
+                >
+                    {isFavorite ? <MdFavorite/> : <MdFavoriteBorder/>}
+                </button>
+            </div>
+        </div>
     )
 });
 
